@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
             Center(
               child: SizedBox(
                 height: 250,
-                child: _3DModel(),
+                child: _model(),
               ),
             ),
             const SizedBox(height: 50),
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
     );
   }
 
-  Widget _3DModel() {
+  Widget _model() {
     return const ModelViewer(
       backgroundColor: Color.fromARGB(0xFF, 0xEE, 0xEE, 0xEE),
       src: 'assets/bmw_m4_f82.glb',
